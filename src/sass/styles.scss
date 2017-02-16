@@ -22,6 +22,7 @@ body {
     min-height: 100%;
 }
 
+
 .comet {
     visibility: hidden;
     opacity: 0;
@@ -42,6 +43,7 @@ body {
 }
 
 .connect {
+    clear:both;
     float: left;
     color: white;
     text-align: center;
@@ -123,19 +125,25 @@ body {
 
 .dataCenter {
     vertical-align: top;
-    clear: both;
+    clear: both !important;
 }
 
 .globe {
     float: left;
-    height: 90vh;
+    height: 73vh;
     width: auto;
     margin-right: 15vw;
 }
 
 .dataCenterList {
+
     color: white;
 }
+
+.activeColor{
+    color:$activeOrange;
+}
+
 
 .joinNow {
     font-weight: 100;
@@ -186,15 +194,53 @@ footer {
     vertical-align: bottom;
 }
 
-@media screen and (max-width: 914px) {
+@media screen and (min-width: 557px) and (max-width: 914px) {
+    .listOf6 {
+    display: block;
+    table-layout: fixed;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
     .animateBenefits {
-        float: right;
-        display: inline-block;
+                display: inline-block;
         vertical-align: top;
         position: relative;
         text-align: center;
         border: 1px solid white;
         width: 32vw;
-        min-height: 80vh;
+        min-height: 50vh;
+    }
+    .globe {
+    float: left;
+    height: 70vh;
+    width: auto;
+    margin-right: 15vw;
+}
+}
+@media screen and (max-width: 556px) {
+    .globe {
+    float: left;
+    height: 53vh;
+    width: auto;
+    margin-right: 15vw;
+}
+    .listOf6 {
+
+    display: block;
+    table-layout: fixed;
+    position: relative;
+    margin: auto;
+        text-align: center;
+}
+    .animateBenefits {
+        margin:auto;
+                display: inline-block;
+        vertical-align: top;
+        position: relative;
+        text-align: center;
+        border: 1px solid white;
+        width: 40vw;
+        min-height: 65vh;
     }
 }

@@ -78,7 +78,11 @@
        .setTween(tweenGoodbye)
       .addTo(controller);
 
+ var tweenActive = TweenMax.staggerFromTo(".activeColor", 2, { opacity: 1 }, { opacity:0, ease: Back.easeOut }, 0.15);
 
+  new ScrollMagic.Scene({ triggerElement: "#sec4", duration:100, offset:50 })
+       .setTween(tweenActive)
+      .addTo(controller);
 
 
 
