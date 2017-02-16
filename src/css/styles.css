@@ -1,0 +1,222 @@
+@media screen and (max-width: 914px) {
+  .animateBenefits {
+    display: none;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+    width: 20vw;
+    min-height: 50vh; }
+  .animateBenefits h3 {
+    color: blue; } }
+
+.scramble {
+  height: 20vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+
+.text {
+  font-weight: 120;
+  font-size: 30px;
+  color: white; }
+
+.dud {
+  color: #cd501b; }
+
+.sideBar {
+  left: .3vw;
+  position: fixed;
+  background-color: transparent;
+  color: white;
+  z-index: 100; }
+
+.active {
+  color: #cd501b; }
+
+.neon {
+  color: #7100b3;
+  -webkit-animation: pulse .5s ease-in-out infinite alternate;
+  -webkit-backface-visibility: hidden; }
+
+@-webkit-keyframes pulse {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #7100b3, 0 0 70px #7100b3, 0 0 80px #410067 , 0 0 100px #410067 , 0 0 150px #410067; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7100b3, 0 0 35px #7100b3, 0 0 40px #410067 , 0 0 50px #410067 , 0 0 75px #410067; } }
+
+.star1 {
+  position: fixed;
+  z-index: 999; }
+
+.starbox {
+  position: absolute;
+  z-index: 999; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px; }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
+
+.fullscreen_video {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+.comet {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  transform: scale(0.0001); }
+
+.defaultTitle {
+  text-align: center;
+  visibility: hidden; }
+
+.titleChanged {
+  color: white;
+  visibility: visible; }
+
+.connect {
+  float: left;
+  color: white;
+  text-align: center; }
+
+.browse {
+  float: right;
+  color: white;
+  text-align: center; }
+
+.flyIn {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+  -webkit-transition: height 2s ease;
+  -moz-transition: height 2s ease;
+  transition: height 2s ease;
+  -webkit-transition: width 2s ease;
+  -moz-transition: width 2s ease;
+  transition: width 2s ease; }
+
+.spacer {
+  height: 25vh; }
+
+.listOf6 {
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  margin: auto; }
+
+#sec1 {
+  position: relative; }
+
+#sec1 h1 {
+  color: #cd501b; }
+
+#sec2 {
+  overflow: hidden;
+  clear: both;
+  z-index: 888; }
+
+#sec4 {
+  display: block;
+  clear: both; }
+
+.animateBenefits {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+  border: 1px solid white;
+  width: 15vw;
+  min-height: 50vh; }
+
+.animateBenefitsTitle {
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+  width: 100vw; }
+
+.animateBenefitsTitle h4 {
+  color: #cd501b; }
+
+.animateBenefits h3 {
+  color: #cd501b; }
+
+.dataCenter {
+  vertical-align: top;
+  clear: both; }
+
+.globe {
+  float: left;
+  height: 90vh;
+  width: auto;
+  margin-right: 15vw; }
+
+.dataCenterList {
+  color: white; }
+
+.joinNow {
+  font-weight: 100;
+  font-size: 30px;
+  background-color: transparent;
+  color: #cd501b;
+  border: 2px solid #cd501b;
+  border-radius: 5px; }
+
+button {
+  cursor: pointer; }
+
+button:active {
+  background-color: #cd501b;
+  color: white; }
+
+button:focus {
+  outline: 0; }
+
+.goodbye {
+  text-align: center;
+  color: purple;
+  margin-top: 25vh; }
+
+.imgCircle {
+  clear: both;
+  border-radius: 50%; }
+
+.icons {
+  margin-bottom: 3vh;
+  max-width: 20vw;
+  max-height: 4vh; }
+
+.sponsors {
+  text-align: center; }
+
+footer {
+  height: 5vh;
+  bottom: 0 !important;
+  vertical-align: bottom; }
+
+@media screen and (max-width: 914px) {
+  .animateBenefits {
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+    width: 32vw;
+    min-height: 80vh; } }

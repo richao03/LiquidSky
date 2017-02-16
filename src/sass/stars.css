@@ -1,0 +1,9 @@
+.star1{
+    position: fixed;
+    z-index:999;
+}
+
+.starbox{
+	position:absolute;
+	 z-index:999;
+}

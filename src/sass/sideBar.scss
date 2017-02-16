@@ -1,0 +1,42 @@
+.sideBar {
+    left:.3vw;
+    position: fixed;
+    background-color: transparent;
+    color: white;
+    z-index: 100;
+}
+
+.active {
+    color: #cd501b;
+}
+
+
+.neon {
+
+  color: #7100b3;
+  -webkit-animation:pulse .5s ease-in-out infinite alternate;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #7100b3,
+               0 0 70px #7100b3,
+               0 0 80px #410067 ,
+               0 0 100px #410067 ,
+               0 0 150px #410067 ;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #7100b3,
+               0 0 35px #7100b3,
+               0 0 40px #410067 ,
+               0 0 50px #410067 ,
+               0 0 75px #410067 ;
+  }
+}
