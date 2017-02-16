@@ -1,8 +1,10 @@
 .sideBar {
-    left:.3vw;
+    right:1vw;
+
     position: fixed;
     background-color: transparent;
     color: white;
+    font-size:1.2em;
     z-index: 100;
 }
 
@@ -14,7 +16,7 @@
 .neon {
 
   color: #7100b3;
-  -webkit-animation:pulse .5s ease-in-out infinite alternate;
+  -webkit-animation:pulse 1.5s ease-in-out infinite alternate;
   -webkit-backface-visibility: hidden;
 }
 

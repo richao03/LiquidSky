@@ -217,8 +217,14 @@ footer {
     width: auto;
     margin-right: 15vw;
 }
+.spacer {
+    height: 35vh;
+}
 }
 @media screen and (max-width: 556px) {
+    .spacer {
+    height: 35vh;
+}
     .globe {
     float: left;
     height: 53vh;
