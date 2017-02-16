@@ -1,9 +1,40 @@
 $activeOrange: #cd501b;
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
 
+/*
+sections ==================
+*/
+
+#sec1 {
+    position: relative;
+}
+
+#sec1 h1 {
+    color: $activeOrange;
+}
+
+#sec2 {
+    overflow: hidden;
+    clear: both;
+    z-index: 888;
+}
+
+#sec4 {
+    display: block;
+    clear: both;
+}
+
+.spacer {
+    height: 25vh;
+}
+
+/*
+background ==================
+*/
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -22,7 +53,9 @@ body {
     min-height: 100%;
 }
 
-
+/*
+first scene ==================
+*/
 .comet {
     visibility: hidden;
     opacity: 0;
@@ -43,7 +76,7 @@ body {
 }
 
 .connect {
-    clear:both;
+    clear: both;
     float: left;
     color: white;
     text-align: center;
@@ -68,9 +101,9 @@ body {
     transition: width 2s ease;
 }
 
-.spacer {
-    height: 25vh;
-}
+/*
+second scene ==================
+*/
 
 .listOf6 {
     display: table;
@@ -79,24 +112,7 @@ body {
     margin: auto;
 }
 
-#sec1 {
-    position: relative;
-}
 
-#sec1 h1 {
-    color: $activeOrange;
-}
-
-#sec2 {
-    overflow: hidden;
-    clear: both;
-    z-index: 888;
-}
-
-#sec4 {
-    display: block;
-    clear: both;
-}
 
 .animateBenefits {
     display: table-cell;
@@ -123,6 +139,10 @@ body {
     color: $activeOrange;
 }
 
+/*
+dataCenter scene ==================
+*/
+
 .dataCenter {
     vertical-align: top;
     clear: both !important;
@@ -136,13 +156,12 @@ body {
 }
 
 .dataCenterList {
-
     color: white;
 }
 
-.activeColor{
-    color:$activeOrange;
-}
+/*
+CTA scene ==================
+*/
 
 
 .joinNow {
@@ -152,15 +171,15 @@ body {
     color: $activeOrange;
     border: 2px solid $activeOrange;
     border-radius: 5px;
-   
 }
 
-button{
+button {
     cursor: pointer;
 }
-button:active{
+
+button:active {
     background-color: $activeOrange;
-    color:white;
+    color: white;
 }
 
 button:focus {
@@ -194,16 +213,19 @@ footer {
     vertical-align: bottom;
 }
 
+/*
+Responsiveness ==================
+*/
 @media screen and (min-width: 557px) and (max-width: 914px) {
     .listOf6 {
-    display: block;
-    table-layout: fixed;
-    position: relative;
-    margin: auto;
-    text-align: center;
-}
+        display: block;
+        table-layout: fixed;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
     .animateBenefits {
-                display: inline-block;
+        display: inline-block;
         vertical-align: top;
         position: relative;
         text-align: center;
@@ -212,36 +234,36 @@ footer {
         min-height: 50vh;
     }
     .globe {
-    float: left;
-    height: 70vh;
-    width: auto;
-    margin-right: 15vw;
+        float: left;
+        height: 70vh;
+        width: auto;
+        margin-right: 15vw;
+    }
+    .spacer {
+        height: 35vh;
+    }
 }
-.spacer {
-    height: 35vh;
-}
-}
+
 @media screen and (max-width: 556px) {
     .spacer {
-    height: 35vh;
-}
+        height: 35vh;
+    }
     .globe {
-    float: left;
-    height: 53vh;
-    width: auto;
-    margin-right: 15vw;
-}
+        float: left;
+        height: 53vh;
+        width: auto;
+        margin-right: 15vw;
+    }
     .listOf6 {
-
-    display: block;
-    table-layout: fixed;
-    position: relative;
-    margin: auto;
+        display: block;
+        table-layout: fixed;
+        position: relative;
+        margin: auto;
         text-align: center;
-}
+    }
     .animateBenefits {
-        margin:auto;
-                display: inline-block;
+        margin: auto;
+        display: inline-block;
         vertical-align: top;
         position: relative;
         text-align: center;

@@ -1,26 +1,27 @@
+//makes stars scroll at different speed
 $.fn.moveIt = function(){
-  var $window = $(window);
-  var instances = [];
+  let $window = $(window);
+  let instances = [];
   
   $(this).each(function(){
     instances.push(new moveItItem($(this)));
   });
   
   window.onscroll = function(){
-    var scrollTop = $window.scrollTop();
+    let scrollTop = $window.scrollTop();
     instances.forEach(function(inst){
       inst.update(scrollTop);
     });
   }
 }
 
-var moveItItem = function(el){
+let moveItItem = function(el){
   this.el = $(el);
   this.speed = parseInt(this.el.attr('data-scroll-speed'));
 };
 
 moveItItem.prototype.update = function(scrollTop){
-  var pos = scrollTop / this.speed;
+  let pos = scrollTop / this.speed;
   this.el.css('transform', 'translateY(' + -pos + 'px)');
 };
 

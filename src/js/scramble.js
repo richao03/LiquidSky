@@ -1,7 +1,4 @@
-// ——————————————————————————————————————————————————
-// TextScramble
-// ——————————————————————————————————————————————————
-
+///scramble helper
 class TextScramble {
   constructor(el) {
     this.el = el
@@ -57,9 +54,7 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
+////actual function
 
 const phrases = [
   'Welcome to the Future of Gaming',

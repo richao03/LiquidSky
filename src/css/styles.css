@@ -59,6 +59,30 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0px; }
 
+/*
+sections ==================
+*/
+#sec1 {
+  position: relative; }
+
+#sec1 h1 {
+  color: #cd501b; }
+
+#sec2 {
+  overflow: hidden;
+  clear: both;
+  z-index: 888; }
+
+#sec4 {
+  display: block;
+  clear: both; }
+
+.spacer {
+  height: 25vh; }
+
+/*
+background ==================
+*/
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -75,6 +99,9 @@ body {
   min-width: 100%;
   min-height: 100%; }
 
+/*
+first scene ==================
+*/
 .comet {
   visibility: hidden;
   opacity: 0;
@@ -114,29 +141,14 @@ body {
   -moz-transition: width 2s ease;
   transition: width 2s ease; }
 
-.spacer {
-  height: 25vh; }
-
+/*
+second scene ==================
+*/
 .listOf6 {
   display: table;
   table-layout: fixed;
   position: relative;
   margin: auto; }
-
-#sec1 {
-  position: relative; }
-
-#sec1 h1 {
-  color: #cd501b; }
-
-#sec2 {
-  overflow: hidden;
-  clear: both;
-  z-index: 888; }
-
-#sec4 {
-  display: block;
-  clear: both; }
 
 .animateBenefits {
   display: table-cell;
@@ -159,6 +171,9 @@ body {
 .animateBenefits h3 {
   color: #cd501b; }
 
+/*
+dataCenter scene ==================
+*/
 .dataCenter {
   vertical-align: top;
   clear: both !important; }
@@ -172,9 +187,9 @@ body {
 .dataCenterList {
   color: white; }
 
-.activeColor {
-  color: #cd501b; }
-
+/*
+CTA scene ==================
+*/
 .joinNow {
   font-weight: 100;
   font-size: 30px;
@@ -215,6 +230,9 @@ footer {
   bottom: 0 !important;
   vertical-align: bottom; }
 
+/*
+Responsiveness ==================
+*/
 @media screen and (min-width: 557px) and (max-width: 914px) {
   .listOf6 {
     display: block;
