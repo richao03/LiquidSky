@@ -26,6 +26,8 @@ sections ==================
 #sec4 {
     display: block;
     clear: both;
+    padding-top:5vh;
+    padding-bottom:25vh;
 }
 
 .spacer {
@@ -162,19 +164,14 @@ dataCenter scene ==================
     color: white;
 }
 
+.activeList{
+        color:$activeOrange;
+}
+
 /*
 CTA scene ==================
 */
 
-
-.joinNow {
-    font-weight: 100;
-    font-size: 30px;
-    background-color: transparent;
-    color: $activeOrange;
-    border: 2px solid $activeOrange;
-    border-radius: 5px;
-}
 
 button {
     cursor: pointer;
@@ -183,6 +180,7 @@ button {
 button:active {
     background-color: $activeOrange;
     color: white;
+    border:none;
 }
 
 button:focus {
@@ -204,6 +202,7 @@ button:focus {
     margin-bottom: 3vh;
     max-width: 20vw;
     max-height: 4vh;
+    padding-left:1vw;
 }
 
 .sponsors {
@@ -211,9 +210,9 @@ button:focus {
 }
 
 footer {
-    height: 5vh;
+    height: 2vh;
     bottom: 0 !important;
-    vertical-align: bottom;
+    text-align: bottom;
 }
 
 /*
@@ -246,11 +245,24 @@ Responsiveness ==================
         height: 35vh;
     }
     .dataCenterList {
-    float:left;
-    margin-right:5vw;
+    float:right;
+    padding-right:5vw;
     color: white;
 }
 }
+@media screen and (min-width: 915px) and (max-width: 1026px) {
+     .dataCenterList {
+    float:right;
+    margin-right:15vw;
+    color: white;
+}
+    .globe {
+        float: left;
+        height: 70vh;
+        width: auto;
+        margin-right: 15vw;
+    }
+    }
 
 @media screen and (max-width: 556px) {
     .spacer {
@@ -280,7 +292,7 @@ Responsiveness ==================
         min-height: 65vh;
     }
     .dataCenterList {
-    
+    float:right;
     margin:auto;
     color: white;
 }

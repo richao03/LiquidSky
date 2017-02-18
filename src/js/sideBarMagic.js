@@ -1,4 +1,4 @@
-  new ScrollMagic.Scene({ triggerElement: "#sec1", duration: 5200, offset: 60 })
+  new ScrollMagic.Scene({ triggerElement: "#sec1", duration: 5200, offset: 120 })
       .setClassToggle("#high1", "active")
       .addTo(controller);
   new ScrollMagic.Scene({ triggerElement: "#sec1half" })

@@ -141,6 +141,15 @@ next()
       .setTween(tweenStagger1)
       .addTo(controller);
 
+ /////////Data Center List
+
+
+ new ScrollMagic.Scene({ triggerElement: "#sec3" })
+      .setClassToggle(".activeList", "activeListReveal")
+      .addTo(controller);
+
+
+
 
 ////SECTION 4
 
@@ -158,7 +167,7 @@ next()
        .setTween(tweenGoodbye)
       .addTo(controller);
 
- let tweenActive = TweenMax.staggerFromTo(".active", 2, { opacity: 1 }, { opacity:0, ease: Back.easeOut }, 0.15);
+ let tweenActive = TweenMax.staggerFromTo(".activeList", 2, { opacity: 1 }, { opacity:0, ease: Back.easeOut }, 0.15);
 
   new ScrollMagic.Scene({ triggerElement: "#sec4", duration:100, offset:50 })
        .setTween(tweenActive)
@@ -167,7 +176,7 @@ next()
 
 
 
-  new ScrollMagic.Scene({ triggerElement: "#sec1", duration: 5200, offset: 60 })
+  new ScrollMagic.Scene({ triggerElement: "#sec1", duration: 5200, offset: 120 })
       .setClassToggle("#high1", "active")
       .addTo(controller);
   new ScrollMagic.Scene({ triggerElement: "#sec1half" })

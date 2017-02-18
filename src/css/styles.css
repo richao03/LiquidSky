@@ -1,3 +1,225 @@
+.section {
+  width: 100%;
+  height: 20vh;
+  padding: 0;
+  position: relative; }
+
+.three {
+  z-index: 9999;
+  left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .three #button {
+    border-radius: 3px;
+    border: 3.5px solid #cd501b;
+    width: 15vw;
+    min-width: 120px;
+    padding: 16px;
+    height: 50px;
+    color: #cd501b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: transparent;
+    -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #fff;
+    z-index: 0; }
+    .three #button .ring {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #d85743;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px;
+      top: 40%;
+      left: 45%;
+      -webkit-transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+      -moz-transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+      -o-transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 1s cubic-bezier(0.55, 0, 0.1, 1);
+      transform: perspective(500px) translate3d(0px, 0px, 0px);
+      opacity: 0.0; }
+    .three #button:hover .one {
+      transform: perspective(500px) translate3d(-90px, -50px, 150px);
+      opacity: 1; }
+    .three #button:hover .two {
+      transform: perspective(800px) translate3d(-130px, 50px, 180px);
+      opacity: 0.6; }
+    .three #button:hover .three {
+      transform: perspective(800px) translate3d(130px, 50px, 30px);
+      opacity: 0.2; }
+    .three #button:hover .four {
+      transform: perspective(800px) translate3d(130px, -120px, 80px);
+      opacity: 0.2; }
+    .three #button::after {
+      position: fixed;
+      top: -35px;
+      left: 10%;
+      width: 150px;
+      height: 150px;
+      content: "";
+      background: #d85743;
+      z-index: -1;
+      transform: perspective(800px) scale(0) rotate(0deg);
+      -webkit-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      -moz-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      -o-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 2s cubic-bezier(0.55, 0, 0.1, 1); }
+    .three #button:before {
+      position: fixed;
+      top: -40px;
+      right: 1vw;
+      width: 160px;
+      height: 160px;
+      border: solid 1px purple;
+      content: "";
+      background: transparent;
+      z-index: -1;
+      transform: perspective(800px) scale(0.4) rotate(0deg);
+      transition: border-color 1s ease;
+      -webkit-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      -moz-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      -o-transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 2s cubic-bezier(0.55, 0, 0.1, 1); }
+    .three #button:after {
+      border: solid 1px purple; }
+    .three #button:hover::after {
+      transform: perspective(800px) scale(1) rotate(600deg); }
+    .three #button:hover::before {
+      transform: perspective(800px) scale(1) rotate(-100deg); }
+    .three #button:hover {
+      color: purple; }
+
+.activeListReveal {
+  position: relative;
+  margin: 0 auto; }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(43px, 9999px, 30px, 0); }
+  5% {
+    clip: rect(60px, 9999px, 19px, 0); }
+  10% {
+    clip: rect(100px, 9999px, 47px, 0); }
+  15% {
+    clip: rect(18px, 9999px, 62px, 0); }
+  20% {
+    clip: rect(96px, 9999px, 14px, 0); }
+  25% {
+    clip: rect(66px, 9999px, 57px, 0); }
+  30% {
+    clip: rect(41px, 9999px, 76px, 0); }
+  35% {
+    clip: rect(96px, 9999px, 91px, 0); }
+  40% {
+    clip: rect(2px, 9999px, 14px, 0); }
+  45% {
+    clip: rect(32px, 9999px, 47px, 0); }
+  50% {
+    clip: rect(58px, 9999px, 20px, 0); }
+  55% {
+    clip: rect(16px, 9999px, 84px, 0); }
+  60% {
+    clip: rect(48px, 9999px, 50px, 0); }
+  65% {
+    clip: rect(76px, 9999px, 1px, 0); }
+  70% {
+    clip: rect(26px, 9999px, 17px, 0); }
+  75% {
+    clip: rect(46px, 9999px, 66px, 0); }
+  80% {
+    clip: rect(44px, 9999px, 62px, 0); }
+  85% {
+    clip: rect(91px, 9999px, 41px, 0); }
+  90% {
+    clip: rect(90px, 9999px, 67px, 0); }
+  95% {
+    clip: rect(28px, 9999px, 100px, 0); }
+  100% {
+    clip: rect(75px, 9999px, 63px, 0); } }
+
+.activeListReveal:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: #cd501b;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse; }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(21px, 9999px, 100px, 0); }
+  5% {
+    clip: rect(58px, 9999px, 89px, 0); }
+  10% {
+    clip: rect(89px, 9999px, 86px, 0); }
+  15% {
+    clip: rect(84px, 9999px, 9px, 0); }
+  20% {
+    clip: rect(33px, 9999px, 84px, 0); }
+  25% {
+    clip: rect(22px, 9999px, 62px, 0); }
+  30% {
+    clip: rect(19px, 9999px, 30px, 0); }
+  35% {
+    clip: rect(65px, 9999px, 70px, 0); }
+  40% {
+    clip: rect(18px, 9999px, 76px, 0); }
+  45% {
+    clip: rect(91px, 9999px, 79px, 0); }
+  50% {
+    clip: rect(30px, 9999px, 18px, 0); }
+  55% {
+    clip: rect(66px, 9999px, 26px, 0); }
+  60% {
+    clip: rect(66px, 9999px, 21px, 0); }
+  65% {
+    clip: rect(88px, 9999px, 64px, 0); }
+  70% {
+    clip: rect(37px, 9999px, 33px, 0); }
+  75% {
+    clip: rect(12px, 9999px, 57px, 0); }
+  80% {
+    clip: rect(24px, 9999px, 10px, 0); }
+  85% {
+    clip: rect(62px, 9999px, 83px, 0); }
+  90% {
+    clip: rect(38px, 9999px, 76px, 0); }
+  95% {
+    clip: rect(69px, 9999px, 15px, 0); }
+  100% {
+    clip: rect(19px, 9999px, 27px, 0); } }
+
+.activeListReveal:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: #cd501b;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse; }
+
 @media screen and (max-width: 914px) {
   .animateBenefits {
     display: none;
@@ -26,7 +248,7 @@
   color: #cd501b; }
 
 .sideBar {
-  right: 1vw;
+  left: 1vw;
   position: fixed;
   background-color: transparent;
   color: white;
@@ -75,7 +297,9 @@ sections ==================
 
 #sec4 {
   display: block;
-  clear: both; }
+  clear: both;
+  padding-top: 5vh;
+  padding-bottom: 25vh; }
 
 .spacer {
   height: 25vh; }
@@ -190,23 +414,19 @@ dataCenter scene ==================
   margin-right: 5vw;
   color: white; }
 
+.activeList {
+  color: #cd501b; }
+
 /*
 CTA scene ==================
 */
-.joinNow {
-  font-weight: 100;
-  font-size: 30px;
-  background-color: transparent;
-  color: #cd501b;
-  border: 2px solid #cd501b;
-  border-radius: 5px; }
-
 button {
   cursor: pointer; }
 
 button:active {
   background-color: #cd501b;
-  color: white; }
+  color: white;
+  border: none; }
 
 button:focus {
   outline: 0; }
@@ -223,15 +443,16 @@ button:focus {
 .icons {
   margin-bottom: 3vh;
   max-width: 20vw;
-  max-height: 4vh; }
+  max-height: 4vh;
+  padding-left: 1vw; }
 
 .sponsors {
   text-align: center; }
 
 footer {
-  height: 5vh;
+  height: 2vh;
   bottom: 0 !important;
-  vertical-align: bottom; }
+  text-align: bottom; }
 
 /*
 Responsiveness ==================
@@ -259,9 +480,20 @@ Responsiveness ==================
   .spacer {
     height: 35vh; }
   .dataCenterList {
-    float: left;
-    margin-right: 5vw;
+    float: right;
+    padding-right: 5vw;
     color: white; } }
+
+@media screen and (min-width: 915px) and (max-width: 1026px) {
+  .dataCenterList {
+    float: right;
+    margin-right: 15vw;
+    color: white; }
+  .globe {
+    float: left;
+    height: 70vh;
+    width: auto;
+    margin-right: 15vw; } }
 
 @media screen and (max-width: 556px) {
   .spacer {
@@ -287,5 +519,6 @@ Responsiveness ==================
     width: 40vw;
     min-height: 65vh; }
   .dataCenterList {
+    float: right;
     margin: auto;
     color: white; } }
