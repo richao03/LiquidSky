@@ -85,11 +85,19 @@ first scene ==================
     text-align: center;
 }
 
+.connect img {
+    max-width:45vw;
+}
+
 .browse {
     float:right;
     margin-right:10vw;
     color: white;
     text-align: center;
+}
+
+.browse img{
+    max-width:45vw;
 }
 
 .flyIn {
