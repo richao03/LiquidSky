@@ -79,13 +79,15 @@ first scene ==================
 
 .connect {
     clear: both;
-    float: left;
+    float:left;
+    margin-left: 15vw;
     color: white;
     text-align: center;
 }
 
 .browse {
-    float: right;
+    float:right;
+    margin-right:10vw;
     color: white;
     text-align: center;
 }
@@ -155,12 +157,12 @@ dataCenter scene ==================
     float: left;
     height: auto;
     width: 50vw;
-    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
 .dataCenterList {
     float:right;
-    margin-right:5vw;
+    margin-right:10vw;
     color: white;
 }
 
