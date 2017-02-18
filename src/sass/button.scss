@@ -50,7 +50,7 @@ $pale-white: #f6f6f6;
        width: 15vw;
        min-width: 120px;
        padding: 16px;
-       height: 50px;
+       height: 40px;
        color:#cd501b;
        @include big();
        font-size: 1.3em;
@@ -99,7 +99,8 @@ $pale-white: #f6f6f6;
          width: 150px;
          height: 150px;
           content: "";
-          background: #d85743;
+          background:   #d85743;
+           border: solid 1px purple;
           z-index: -1;
           transform:perspective(800px) scale(0.0) rotate(0deg);
           @include anime(2s,(cubic-bezier(.55,0,.1,1)));
@@ -110,22 +111,20 @@ $pale-white: #f6f6f6;
           right:1vw;
          width: 160px;
          height: 160px;
-      border: solid 1px purple;
+   
           content: "";
           background:transparent;
           z-index: -1;
           transform:perspective(800px) scale(0.4) rotate(0deg);
-          transition:border-color 1s ease;
           @include anime(2s, (cubic-bezier(.55,0,.1,1)));
        }
-       &:after{
-            border: solid 1px purple;
-       }
+  
        &:hover::after{
          transform:perspective(800px) scale(1.0) rotate(600deg);
          
        }
        &:hover::before{
+           border: solid 1px purple;
            transform:perspective(800px) scale(1.0) rotate(-100deg);
        }
        &:hover{
