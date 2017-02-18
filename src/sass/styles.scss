@@ -249,28 +249,28 @@ Responsiveness ==================
         float: left;
         height: 70vh;
         width: auto;
-        margin-right: 15vw;
+        margin-left: 15vw;
     }
     .spacer {
         height: 35vh;
     }
     .dataCenterList {
     float:right;
-    padding-right:5vw;
+    padding-right:20vw;
     color: white;
 }
 }
 @media screen and (min-width: 915px) and (max-width: 1026px) {
      .dataCenterList {
     float:right;
-    margin-right:15vw;
+    margin-right:35vw;
     color: white;
 }
     .globe {
         float: left;
         height: 70vh;
         width: auto;
-        margin-right: 15vw;
+        margin-left: 15vw;
     }
     }
 
@@ -302,7 +302,7 @@ Responsiveness ==================
         min-height: 65vh;
     }
     .dataCenterList {
-    float:right;
+    float:left;
     margin:auto;
     color: white;
 }
