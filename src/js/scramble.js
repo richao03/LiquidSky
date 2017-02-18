@@ -58,7 +58,7 @@ class TextScramble {
 
 const phrases = [
   'Welcome to the Future of Gaming',
-  'Where every computer can run every game',
+  'Where every computer can run every game.',
   'Welcome to LiquidSky'
 
 ]
